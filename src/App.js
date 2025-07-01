@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="container">
+      <header className="header">
+        <h1 className="title">OpiNote InVibe</h1>
+        <p className="subtitle">Share Opinions. Send Invitations.</p>
       </header>
+
+      <main className="main">
+        <img
+          src="https://img.icons8.com/fluency/240/download.png"
+          alt="Download Icon"
+          className="download-icon"
+        />
+        <h2 className="section-title">Download OpiNote InVibe APK</h2>
+        <p className="description">
+          Experience a unique social space where you can share your opinions and send invitations
+          easily. Built for connection, expression, and simplicity.
+        </p>
+        <a href="/OpiNote-InVibe.apk"  download="OpiNote-InVibe.apk" className="download-button">
+          Download Now
+        </a>
+      </main>
+
+      <footer className="footer">&copy; 2025 OpiNote InVibe. All rights reserved.</footer>
     </div>
   );
 }
-
-export default App;
